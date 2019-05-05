@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+
+    <integer name="text_max_length">25</integer>
+    <integer name="text_min_length">5</integer>
+
+    <integer name="phone_number_max_length">15</integer>
+    <integer name="quantity_max_length">4</integer>
+    <integer name="description_max_length">500</integer>
+</resources>

@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorWindowBackGround</item>
+    </style>
+
+    <!-- general style for all editTexts in editor layout -->
+    <style name="edit_text_style">
+        <item name="android:layout_width">@dimen/edit_text_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- for textView displays error msg in editor layout -->
+    <style name="error_msg_text_views_style" parent="labels_text_views_style">
+        <item name="android:textSize">@dimen/msg_texts_size</item>
+        <item name="android:textColor">@color/error_msg_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- for textView displays labels in editor layout -->
+    <style name="labels_text_views_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textSize">@dimen/default_texts_size</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+    <!-- for textView displays labels in editor layout -->
+    <style name="count_msg_text_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/padding_margin_value_4spaces</item>
+        <item name="android:textSize">@dimen/default_texts_size</item>
+        <item name="android:textColor">@color/default_text_color</item>
+
+    </style>
+
+    <!-- for images in editor layout -->
+    <style name="image_views_style">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/padding_margin_value_4spaces</item>
+        <item name="android:src">@drawable/add_photo</item>
+    </style>
+
+    <!-- general text style , text size is overwrite for each textView -->
+    <style name="item_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+    <style name="items_icons_style">
+        <item name="android:layout_width">@dimen/items_icons_size</item>
+        <item name="android:layout_height">@dimen/items_icons_size</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+
+</resources>

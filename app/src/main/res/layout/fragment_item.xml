@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/frg_tv_count_msg"
+        style="@style/count_msg_text_view_style"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/count_msg" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/frg_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/padding_bottom_recycler_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frg_tv_count_msg" />
+
+    <TextView
+        android:id="@+id/frg_tv_error_msg"
+        style="@style/error_msg_text_views_style"
+        android:layout_marginTop="@dimen/padding_margin_value_8spaces"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frg_recycler_view"
+        tools:text="@string/no_data_for_input_value_msg" />
+
+    <ImageView
+        android:id="@+id/frg_iv_error_image"
+        android:layout_width="@dimen/empty_msg_icons_width"
+        android:layout_height="@dimen/empty_msg_icons_height"
+        android:contentDescription="@string/description_error_image_view_fragment_item"
+        android:src="@drawable/empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frg_tv_error_msg" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/frg_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+
+</android.support.constraint.ConstraintLayout>
